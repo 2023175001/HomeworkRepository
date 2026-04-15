@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Aggravo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff')
+    format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NexonLv1Gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff')
+    format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'NexonLv1Gothic', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #f5f7fa;
+}
+
+h1 {
+  font-family: 'Aggravo', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.nav {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 700px;
+  margin: 0 auto;
+  padding: 35px 40px;
+  border: 3px solid black;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.form-input {
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-family: 'NexonLv1Gothic', sans-serif;
+  font-size: 15px;
+  width: 85px;
+  height: 35px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-login,
+.btn-signup {
+  background-color: lightgreen;
+  color: black;
+}
+
+.btn-cancel {
+  background-color: red;
+  color: white;
+}

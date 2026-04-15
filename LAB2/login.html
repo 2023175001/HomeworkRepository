@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <h1>Welcome to INTERNET-PROGRAMMING MOVIE SITE</h1>
+    <nav class="nav">
+      <span>로그인</span>
+      <a href="signup.html">회원가입</a>
+    </nav>
+    <form method="post" action="#" class="form form-login">
+      <div class="form-input">
+        <p>
+          <label>
+            아이디:
+            <input type="text" name="username" autofocus required />
+          </label>
+        </p>
+        <p>
+          <label>
+            비밀번호:
+            <input
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              required
+            />
+          </label>
+        </p>
+      </div>
+      <div class="form-btn">
+        <input type="submit" class="btn btn-login" value="Login" />
+        <input
+          type="submit"
+          formnovalidate
+          class="btn btn-cancel"
+          value="Cancel"
+        />
+      </div>
+    </form>
+  </body>
+</html>

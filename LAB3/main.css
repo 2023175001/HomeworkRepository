@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Aggravo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff')
+    format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NexonLv1Gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff')
+    format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'NexonLv1Gothic', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #f5f7fa;
+}
+
+h1 {
+  font-family: 'Aggravo', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 1014px;
+  margin: 0 auto;
+  padding: 35px 0;
+  border: 3px solid black;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.form-input {
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-family: 'NexonLv1Gothic', sans-serif;
+  font-size: 15px;
+  width: 85px;
+  height: 35px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-login,
+.btn-signup {
+  background-color: lightgreen;
+  color: black;
+}
+
+.btn-cancel {
+  background-color: red;
+  color: white;
+}
+
+/* index.html */
+header,
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.nav-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-left: 0;
+}
+
+.site-title {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: slideHeader;
+  animation-duration: 2s;
+  text-align: left;
+}
+
+@keyframes slideHeader {
+  from {
+    transform: translateX(1020px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-section h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+.movie-card {
+  display: flex;
+  width: calc((100% - 60px) / 4);
+  box-sizing: border-box;
+  height: 330px;
+  border: 1px solid black;
+  padding: 10px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.movie-image {
+  position: relative;
+  display: inline-block;
+  width: calc((100% - 10px) / 2);
+  box-sizing: border-box;
+}
+
+.movie-image img {
+  width: 100%;
+  height: 120px;
+  display: block;
+  transition: transform 2s;
+}
+
+.movie-image:hover img {
+  transform: scale(1.2);
+}
+
+.movie-title {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 10px;
+  z-index: 10;
+  background: white;
+}
+
+.movie-image:hover .movie-title {
+  display: block;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: white;
+  line-height: 1.6;
+}
+
+.about-content p {
+  flex: 1;
+  padding: 15px;
+}
+
+.about-content p:first-child {
+  border-right: 1px solid gray;
+}
+
+@media (max-width: 480px) {
+  .nav-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-section h2 {
+    text-align: center;
+  }
+
+  .movie-list {
+    flex-direction: column;
+  }
+
+  .movie-card {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .movie-image {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .movie-image img {
+    width: auto;
+  }
+
+  .about-section h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .nav-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-section h2 {
+    text-align: center;
+  }
+
+  .movie-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .movie-card {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+
+  .movie-image {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .movie-image img {
+    width: auto;
+  }
+
+  .about-section h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 801px) {
+  .nav-main {
+    flex-direction: row;
+  }
+
+  .movie-list {
+    flex-direction: row;
+  }
+}

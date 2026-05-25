@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>영화 정보 사이트</title>
+    <script>
+      let allMovies = [];
+      let filteredMovies = [];
+
+      let currentIndex = 0;
+      const ITEMS_PER_PAGE = 4;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const keywordSearch = document.getElementById('keyword-search');
+        const sortOptions = document.querySelectorAll('input[name="sort"]');
+        const movieList = document.querySelector('.movie-list');
+
+        fetch('product.json')
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error('네트워크 응답에 문제가 발생했습니다.');
+            }
+            return response.json();
+          })
+          .then((data) => {
+            allMovies = data;
+            filter();
+          });
+
+        keywordSearch.addEventListener('input', () => {
+          filter();
+        });
+
+        sortOptions.forEach((radio) => {
+          radio.addEventListener('change', () => {
+            filter();
+          });
+        });
+
+        window.addEventListener('scroll', () => {
+          if (
+            window.innerHeight + window.scrollY >=
+            document.body.offsetHeight - 50
+          ) {
+            loadMoreMovies();
+          }
+        });
+      });
+
+      function filter() {
+        const keyword = document
+          .getElementById('keyword-search')
+          .value.toLowerCase();
+        const sortValue = document.querySelector(
+          'input[name="sort"]:checked',
+        ).value;
+        const movieList = document.querySelector('.movie-list');
+
+        filteredMovies = allMovies.filter((movie) => {
+          return movie.title.toLowerCase().includes(keyword);
+        });
+
+        if (sortValue == 'vote_desc') {
+          filteredMovies.sort((a, b) => b.vote_average - a.vote_average);
+        } else if (sortValue == 'vote_asc') {
+          filteredMovies.sort((a, b) => a.vote_average - b.vote_average);
+        } else if (sortValue == 'date_desc') {
+          filteredMovies.sort(
+            (a, b) => new Date(b.release_date) - new Date(a.release_date),
+          );
+        } else if (sortValue == 'date_asc') {
+          filteredMovies.sort(
+            (a, b) => new Date(a.release_date) - new Date(b.release_date),
+          );
+        }
+        movieList.innerHTML = '';
+        currentIndex = 0;
+        loadMoreMovies();
+      }
+
+      function loadMoreMovies() {
+        const movieList = document.querySelector('.movie-list');
+
+        if (currentIndex >= filteredMovies.length) return;
+
+        const nextMovies = filteredMovies.slice(
+          currentIndex,
+          currentIndex + ITEMS_PER_PAGE,
+        );
+
+        nextMovies.forEach((movie) => {
+          const movieCard = document.createElement('div');
+          movieCard.className = 'movie-card';
+          movieCard.innerHTML = `
+            <div class="movie-image">
+              <img src="${movie.poster}" alt="${movie.title} poster" />
+              <div class="movie-overview">
+                <strong>줄거리:</strong><br/>${movie.overview}
+              </div>
+            </div>
+            <div class="movie-info">
+              <p class="movie-title">${movie.title}</p>
+              <p class="movie-date">🗓️ ${movie.release_date}</p>
+              <p class="movie-vote">⭐️ ${movie.vote_average}</p>
+            </div>
+          `;
+
+          const movieImage = movieCard.querySelector('.movie-image');
+          const movieOverview = movieCard.querySelector('.movie-overview');
+
+          movieImage.addEventListener('mouseenter', () => {
+            movieOverview.style.opacity = '1';
+          });
+
+          movieImage.addEventListener('mouseleave', () => {
+            movieOverview.style.opacity = '0';
+          });
+
+          movieList.appendChild(movieCard);
+        });
+        currentIndex += ITEMS_PER_PAGE;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="site-title">인프밍 영화 정보 사이트입니다.</h1>
+      <nav class="nav-main">
+        <span>메인페이지</span>
+        <a href="login.html">로그인</a>
+        <a href="signup.html">회원가입</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Movies</h2>
+      <section class="filter-section">
+        <input
+          type="text"
+          id="keyword-search"
+          placeholder="키워드를 입력하세요"
+        />
+        <div class="sort-options">
+          <h4>정렬 기준</h4>
+          <label
+            ><input type="radio" name="sort" value="vote_desc" checked /> 평점
+            내림차순</label
+          >
+          <label
+            ><input type="radio" name="sort" value="vote_asc" /> 평점
+            오름차순</label
+          >
+          <label
+            ><input type="radio" name="sort" value="date_desc" /> 개봉
+            내림차순</label
+          >
+          <label
+            ><input type="radio" name="sort" value="date_asc" /> 개봉
+            오름차순</label
+          >
+        </div>
+      </section>
+      <section class="movie-section">
+        <div class="movie-list"></div>
+      </section>
+    </div>
+  </body>
+</html>

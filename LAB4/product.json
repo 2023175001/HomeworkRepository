@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Assassins",
+    "overview": "Assassin Robert Rath arrives at a funeral to kill a prominent mobster, only to witness a rival hired gun complete the job for him -- with grisly results. Horrified by the murder of innocent bystanders, Rath decides to take one last job and then return to civilian life. But finding his way out of the world of contract killing grows ever more dangerous as Rath falls for his female target and becomes a marked man himself.",
+    "poster": "./images/assassins.jpg",
+    "release_date": "1995.10.6",
+    "vote_average": 6
+  },
+  {
+    "title": "Inside Out",
+    "overview": "Growing up can be a bumpy road, and it's no exception for Riley, who is uprooted from her Midwest life when her father starts a new job in San Francisco. Like all of us, Riley is guided by her emotions - Joy, Fear, Anger, Disgust and Sadness. The emotions live in Headquarters, the control center inside Riley's mind, where they help advise her through everyday life. As Riley and her emotions struggle to adjust to a new life in San Francisco, turmoil ensues in Headquarters. Although Joy, Riley's main and most important emotion, tries to keep things positive, the emotions conflict on how best to navigate a new city, house and school.",
+    "poster": "./images/inside_out.jpg",
+    "release_date": "2015.6.9",
+    "vote_average": 7.9
+  },
+  {
+    "title": "Tangled",
+    "overview": "When the kingdom's most wanted-and most charming-bandit Flynn Rider hides out in a mysterious tower, he's taken hostage by Rapunzel, a beautiful and feisty tower-bound teen with 70 feet of magical, golden hair. Flynn's curious captor, who's looking for her ticket out of the tower where she's been locked away for years, strikes a deal with the handsome thief and the unlikely duo sets off on an action-packed escapade, complete with a super-cop horse, an over-protective chameleon and a gruff gang of pub thugs.",
+    "poster": "./images/tangled.jpg",
+    "release_date": "2010.11.24",
+    "vote_average": 7.4
+  },
+  {
+    "title": "Begin Again",
+    "overview": "Gretta's celebrity boyfriend breaks up with her after a long-term relationship, leaving the singer to find success on her own. With the help of record producer, Dan and hip-hop celebrity, Trouble Gum, Gretta strives to fulfil her musical ambitions.",
+    "poster": "./images/begin_again.jpg",
+    "release_date": "2013.9.7",
+    "vote_average": 7.3
+  },
+  {
+    "title": "Jurassic World",
+    "overview": "Twenty-two years after the events of Jurassic Park, Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond.",
+    "poster": "./images/jurassic_world.jpg",
+    "release_date": "2015.6.9",
+    "vote_average": 6.5
+  },
+  {
+    "title": "Jumanji",
+    "overview": "When siblings Judy and Peter discover an enchanted board game that opens the door to a magical world, they unwittingly invite Alan -- an adult who's been trapped inside the game for 26 years -- into their living room. Alan's only hope for freedom is to finish the game, which proves risky as all three find themselves running from giant rhinoceroses, evil monkeys and other terrifying creatures.",
+    "poster": "./images/jumanji.jpg",
+    "release_date": "1995.12.15",
+    "vote_average": 6.9
+  },
+  {
+    "title": "Waiting to Exhale",
+    "overview": "Cheated on, mistreated and stepped on, the women are holding their breath, waiting for the elusive \"good man\" to break a string of less-than-stellar lovers. Friends and confidants Vannah, Bernie, Glo and Robin talk it all out, determined to find a better way to breathe.",
+    "poster": "./images/waiting_to_exhale.jpg",
+    "release_date": "1995.12.22",
+    "vote_average": 6.1
+  },
+  {
+    "title": "Heat",
+    "overview": "Obsessive master thief, Neil McCauley leads a top-notch crew on various insane heists throughout Los Angeles while a mentally unstable detective, Vincent Hanna pursues him without rest. Each man recognizes and respects the ability and the dedication of the other even though they are aware their cat-and-mouse game may end in violence.",
+    "poster": "./images/heat.jpg",
+    "release_date": "1995.12.15",
+    "vote_average": 7.7
+  },
+  {
+    "title": "Tom and Huck",
+    "overview": "A mischievous young boy, Tom Sawyer, witnesses a murder by the deadly Injun Joe. Tom becomes friends with Huckleberry Finn, a boy with no future and no family. Tom has to choose between honoring a friendship or honoring an oath because the town alcoholic is accused of the murder. Tom and Huck go through several adventures trying to retrieve evidence.",
+    "poster": "./images/tom_and_huck.jpg",
+    "release_date": "1995.12.22",
+    "vote_average": 5.4
+  },
+  {
+    "title": "The Avengers",
+    "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+    "poster": "./images/the_avengers.jpg",
+    "release_date": "2012.4.25",
+    "vote_average": 7.4
+  },
+  {
+    "title": "Sudden Death",
+    "overview": "International action superstar Jean Claude Van Damme teams with Powers Boothe in a Tension-packed, suspense thriller, set against the back-drop of a Stanley Cup game.Van Damme portrays a father whose daughter is suddenly taken during a championship hockey game. With the captors demanding a billion dollars by game's end, Van Damme frantically sets a plan in motion to rescue his daughter and abort an impending explosion before the final buzzer...",
+    "poster": "./images/sudden_death.jpg",
+    "release_date": "1995.12.22",
+    "vote_average": 5.5
+  },
+  {
+    "title": "Cypher",
+    "overview": "An unsuspecting, disenchanted man finds himself working as a spy in the dangerous, high-stakes world of corporate espionage. Quickly getting way over-his-head, he teams up with a mysterious femme fatale.",
+    "poster": "./images/cypher.jpg",
+    "release_date": "2002.10.1",
+    "vote_average": 6.7
+  },
+  {
+    "title": "Beer League",
+    "overview": "An unemployed slacker (Lange) inspires his softball teammates to improve their game so they won't get kicked out of the local league.",
+    "poster": "./images/beer_league.jpg",
+    "release_date": "2006.9.15",
+    "vote_average": 5.3
+  },
+  {
+    "title": "Lucy",
+    "overview": "A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond human logic.",
+    "poster": "./images/lucy.jpg",
+    "release_date": "2014.7.14",
+    "vote_average": 6.3
+  },
+  {
+    "title": "Infini",
+    "overview": "A search and rescue team are transported through deep space to a distant mining colony to save the sole survivor of a biological outbreak.  During their mission, they find a lethal weapon which is set to arrive on Earth within the hour.",
+    "poster": "./images/infini.jpg",
+    "release_date": "2015.5.8",
+    "vote_average": 5.1
+  },
+  {
+    "title": "Piku",
+    "overview": "A road trip to Kolkata brings Piku, an architect, closer to her ageing but nagging father Bhaskor Banerjee despite their disparate ideologies and fights over trivial issues.",
+    "poster": "./images/piku.jpg",
+    "release_date": "2015.5.8",
+    "vote_average": 6.8
+  },
+  {
+    "title": "Frank",
+    "overview": "A comedy about a young wannabe musician (Domhnall Gleeson) who discovers he has bitten off more than he can chew when he joins an eccentric pop band led by the mysterious and enigmatic Frank (Michael Fassbender).",
+    "poster": "./images/frank.jpg",
+    "release_date": "2014.5.2",
+    "vote_average": 6.8
+  },
+  {
+    "title": "Sherpa",
+    "overview": "In 2013, the world's media reported on a shocking mountain-high brawl as European climbers fled a mob of angry Sherpas. Director Jennifer Peedom and her team set out to uncover the cause of this altercation, intending to film the 2014 climbing season from the Sherpa's point-of-view. Instead, they captured Everest's greatest tragedy, when a huge block of ice crashed down onto the climbing route...",
+    "poster": "./images/sherpa.jpg",
+    "release_date": "2015.6.7",
+    "vote_average": 7.4
+  },
+  {
+    "title": "The Civil War",
+    "overview": "This highly acclaimed mini series traces the course of the U.S. Civil War from the abolitionist movement through all the major battles to the death of President Lincoln and the beginnings of Reconstruction. The story is mostly told in the words of the participants themselves, through their diaries, letters, and Visuals are usually still photographs and illustrations of the time, and the soundtrack is likewise made up of war-era tunes played on period instruments. Several modern-day historians offer periodic comment and insight on the war's causes and events.",
+    "poster": "./images/the_civil_war.jpg",
+    "release_date": "1990.9.23",
+    "vote_average": 9.2
+  },
+  {
+    "title": "Turbo",
+    "overview": "The tale of an ordinary garden snail who dreams of winning the Indy 500.",
+    "poster": "./images/turbo.jpg",
+    "release_date": "2013.7.11",
+    "vote_average": 6.1
+  }
+]
